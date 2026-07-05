@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+  <head>
+    <title>Kontakt – Filo Terapia</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lorem ipsum dolor sit amet. Skontaktuj się z centrum Filo Terapia." />
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/output.css" />
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body class="text-slate-900 bg-white">
+    <x-header data-path="kontakt"></x-header>
+
+    <main>
+      <section class="bg-teal-700 text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 md:px-16">
+          <p class="text-teal-200 font-semibold uppercase tracking-wider text-sm mb-2">Kontakt</p>
+          <h1 class="text-3xl md:text-5xl font-black">Umów wizytę</h1>
+          <p class="text-teal-100 mt-4 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Skontaktuj się z nami telefonicznie lub przez formularz.</p>
+        </div>
+      </section>
+
+      <section class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 md:px-16 grid lg:grid-cols-2 gap-16">
+          <div>
+            <h2 class="section-title mb-8">Dane kontaktowe</h2>
+            <div class="space-y-6">
+              <div class="flex gap-4 items-start">
+                <img src="/img/phone.svg" alt="" class="w-6 mt-1" />
+                <div>
+                  <p class="font-semibold">Telefon</p>
+                  <a href="tel:+48123456789" class="text-teal-600 hover:underline">+48 123 456 789</a>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <img src="/img/email.svg" alt="" class="w-6 mt-1" />
+                <div>
+                  <p class="font-semibold">Email</p>
+                  <a href="mailto:kontakt@filoterapia.pl" class="text-teal-600 hover:underline">kontakt@filoterapia.pl</a>
+                </div>
+              </div>
+              <div>
+                <p class="font-semibold mb-1">Adres</p>
+                <p class="text-gray-600">ul. Lorem ipsum 12<br>50-000 Wrocław</p>
+              </div>
+              <div>
+                <p class="font-semibold mb-1">Godziny otwarcia</p>
+                <p class="text-gray-600">Pn–Pt: 08:00–20:00<br>Sb: 09:00–14:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="section-title mb-8">Formularz kontaktowy</h2>
+            <form id="contact-form" class="flex flex-col gap-5">
+              <label>Imię i nazwisko
+                <input type="text" name="name" placeholder="Jan Kowalski" required />
+              </label>
+              <label>Email
+                <input type="email" name="email" placeholder="jan@example.com" required />
+              </label>
+              <label>Telefon
+                <input type="tel" name="phone" placeholder="+48 000 000 000" />
+              </label>
+              <label>Usługa
+                <select name="service">
+                  <option value="">Wybierz usługę</option>
+                  <option>Fizjoterapia</option>
+                  <option>Terapia manualna</option>
+                  <option>Rehabilitacja</option>
+                  <option>Trening medyczny</option>
+                  <option>Konsultacja lekarska</option>
+                </select>
+              </label>
+              <label>Wiadomość
+                <textarea name="message" rows="5" placeholder="Lorem ipsum dolor sit amet..." required></textarea>
+              </label>
+              <button type="submit" class="button w-fit">Wyślij wiadomość</button>
+              <p id="form-status" class="text-teal-600 hidden">Wiadomość została wysłana. Dziękujemy!</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 h-80 flex items-center justify-center text-gray-400">
+        <p>Mapa — lorem ipsum (placeholder)</p>
+      </section>
+    </main>
+
+    <ft-footer></ft-footer>
+
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        e.target.reset();
+        const status = document.getElementById("form-status");
+        status.classList.remove("hidden");
+        setTimeout(() => status.classList.add("hidden"), 5000);
+      });
+    </script>
+  </body>
+</html>
