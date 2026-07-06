@@ -47,7 +47,7 @@ class Header extends HTMLElement {
         </span>
       </div>
       
-      <ul class="group-has-checked:right-0 fixed top-0 -right-full w-full h-screen mt-23 xs:mt-25.75 bg-white duration-[.25s] p-4 flex flex-col gap-6 text-2xl font-bold items-center">          
+      <ul id="menu-list" class="group-has-checked:right-0 fixed top-0 -right-full w-full h-screen bg-white duration-[.25s] p-4 flex flex-col gap-6 text-2xl font-bold items-center shadow-[inset_0_4px_6px_-1px_rgba(0,0,0,0.1),inset_0_2px_4px_-2px_rgba(0,0,0,0.1)]">
         <li class="pt-4">
           <a href="${prefix}about">O nas</a>
         </li>
@@ -69,13 +69,39 @@ class Header extends HTMLElement {
   </div>
 </header>
 `;
+    this.hamburger = this.querySelector("#hamburger");
+    this.header = this.querySelector("header");
+    this.menuList = this.querySelector("#menu-list");
 
-    const hamburger = this.querySelector("#hamburger");
-    const header = this.querySelector("header");
-    hamburger.addEventListener("change", () => {
-      header.classList.toggle("overflow-hidden", !hamburger.checked);
-      document.body.classList.toggle("overflow-hidden", hamburger.checked);
+    this.updateMenuPosition = this.updateMenuPosition.bind(this);
+
+    this.hamburger.addEventListener("change", () => {
+      this.updateMenuPosition();
+
+      this.header.classList.toggle("overflow-hidden", !this.hamburger.checked);
+      document.body.classList.toggle("overflow-hidden", this.hamburger.checked);
     });
+
+    window.addEventListener("scroll", this.updateMenuPosition);
+    window.addEventListener("resize", this.updateMenuPosition);
+  }
+
+  connectedCallback() {
+    this.updateMenuPosition();
+  }
+
+  updateMenuPosition() {
+    const infoBar = document.getElementById("info-bar");
+    const headerRect = this.header.getBoundingClientRect();
+    let targetTop = headerRect.bottom;
+
+    if (infoBar && window.scrollY === 0) {
+      const infoRect = infoBar.getBoundingClientRect();
+      targetTop = infoRect.height + headerRect.height;
+    }
+
+    this.menuList.style.top = `${targetTop}px`;
+    this.menuList.style.height = `calc(100vh - ${targetTop}px)`;
   }
 }
 
