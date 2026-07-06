@@ -35,19 +35,19 @@ class Header extends HTMLElement {
         <input
           id="hamburger"
           type="checkbox"
-          class="peer opacity-0 w-0 h-[26px] cursor-pointer" 
+          class="peer opacity-0 w-0 h-6.5 cursor-pointer" 
         />
         <label
           for="hamburger"
-          class="absolute top-0 right-0 w-[26px] h-[26px] z-10 flex items-center justify-center cursor-pointer before:absolute before:w-full before:h-[2px] before:bg-gray-700 before:-translate-y-[8px] before:transition-all after:absolute after:w-full after:h-[2px] after:bg-gray-700 after:translate-y-[8px] after:transition-all peer-checked:rotate-45 peer-checked:before:translate-y-0 peer-checked:before:rotate-0 peer-checked:after:translate-y-0 peer-checked:after:rotate-90 transition-transform duration-300"
+          class="absolute top-0 right-0 w-6.5 h-6.5 z-10 flex items-center justify-center cursor-pointer before:absolute before:w-full before:h-0.5 before:bg-gray-700 before:-translate-y-2 before:transition-all after:absolute after:w-full after:h-0.5 after:bg-gray-700 after:translate-y-2 after:transition-all peer-checked:rotate-45 peer-checked:before:translate-y-0 peer-checked:before:rotate-0 peer-checked:after:translate-y-0 peer-checked:after:rotate-90 transition-transform duration-300"
         >
         </label>
 
-        <span class="w-[26px] h-[2px] bg-gray-700 peer-checked:rotate-90 peer-checked:opacity-0 transition-transform duration-300">
+        <span class="w-6.5 h-0.5 bg-gray-700 peer-checked:rotate-90 peer-checked:opacity-0 transition-transform duration-300">
         </span>
       </div>
       
-      <ul class="group-has-checked:right-0 absolute top-0 -right-full w-full h-screen bg-white duration-[.25s] shadow-2xl p-4 flex flex-col gap-6 text-2xl font-bold items-center">          
+      <ul class="group-has-checked:right-0 fixed top-0 -right-full w-full h-screen mt-23 xs:mt-25.75 bg-white duration-[.25s] p-4 flex flex-col gap-6 text-2xl font-bold items-center">          
         <li class="pt-4">
           <a href="${prefix}about">O nas</a>
         </li>
