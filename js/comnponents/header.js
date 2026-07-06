@@ -7,15 +7,21 @@ class Header extends HTMLElement {
     const prefix = path === "index" ? "#" : "/#";
 
     this.innerHTML = `
-<header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md">
+<header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md shadow-md overflow-hidden">
   <div class="flex justify-between items-center p-4 md:px-16 max-w-7xl mx-auto">
-    <a href=${prefix} class="flex gap-2 items-center">
-      <img src="img/logo.svg" alt="logo" class="w-8 xs:w-9" />
-      <div class="flex flex-col font-black text-[1.75rem] leading-5 xs:text-[2rem] xs:leading-6">
-        <div class="text-indigo-500">healthy</div>
-        <div class="tracking-tight">work</div>
+    <div class="flex items-center gap-4">
+      <a href="${prefix}" class="flex gap-2 items-center">
+      <img src="img/logo.svg" alt="logo" class="w-10 xs:w-14" />
+      <div class="flex flex-col font-display">
+      <div class="uppercase text-[8px] xs:text-[10px] tracking-[3px]">Ośrodek terapii</div>
+      <div class="text-primary-500 leading-12 xs:leading-14 tracking-[8px] font-bold text-[2.5rem] xs:text-[3rem]">FiLO</div>
       </div>
-    </a>
+      </a>
+      
+      <button class="button hidden! xs:block!">
+        Umów wizytę
+      </button>
+    </div>
 
     <nav class="hidden md:flex items-center gap-6">
       <a href="${prefix}about" class="hover:text-indigo-500">O nas</a>
@@ -24,7 +30,7 @@ class Header extends HTMLElement {
       <a href="${prefix}contact" class="hover:text-indigo-500">Kontakt</a>
     </nav>
 
-    <nav class="md:hidden">
+    <nav class="md:hidden group">
       <div class="relative flex items-center">
         <input
           id="hamburger"
@@ -37,46 +43,39 @@ class Header extends HTMLElement {
         >
         </label>
 
-        <span class="w-[26px] h-[2px] bg-gray-700 peer-checked:rotate-90 transition-transform duration-300">
+        <span class="w-[26px] h-[2px] bg-gray-700 peer-checked:rotate-90 peer-checked:opacity-0 transition-transform duration-300">
         </span>
-
-        <ul class="peer-checked:right-0 fixed top-0 -right-full w-full h-full bg-white duration-[.25s] shadow-2xl p-4 flex flex-col gap-6 text-2xl font-bold items-center">
-          <li class="self-start">
-            <div class="flex gap-2 items-center">
-              <img src="img/logo.svg" alt="logo" class="w-8 xs:w-9" />
-              <div class="flex flex-col font-black text-[1.75rem] leading-5 xs:text-[2rem] xs:leading-6">
-                <div class="text-indigo-500">healthy</div>
-                <div class="tracking-tight">work</div>
-              </div>
-            </div>
-          </li>
-
-          <li class="w-full flex justify-center">
-            <hr class="w-full border-gray-300" />
-          </li>
-
-          <li class="pt-4">
-            <a href="${prefix}about">O nas</a>
-          </li>
-          <li>
-            <a href="${prefix}services">Jak to działa?</a>
-          </li>
-          <li class="pb-4">
-            <a href="${prefix}reviews">Opinie</a>
-          </li>
-
-          <li class="w-full flex justify-center">
-            <hr class="w-full border-gray-300" />
-          </li>
-          <li class="flex flex-col items-center justify-end w-full">
-            <a href="${prefix}contact" class="button w-full">Skontaktuj się z nami</a>
-          </li>
-        </ul>
       </div>
+      
+      <ul class="group-has-checked:right-0 absolute top-0 -right-full w-full h-screen bg-white duration-[.25s] shadow-2xl p-4 flex flex-col gap-6 text-2xl font-bold items-center">          
+        <li class="pt-4">
+          <a href="${prefix}about">O nas</a>
+        </li>
+        <li>
+          <a href="${prefix}services">Jak to działa?</a>
+        </li>
+        <li class="pb-4">
+          <a href="${prefix}reviews">Opinie</a>
+        </li>
+
+        <li class="w-full flex justify-center">
+          <hr class="w-full border-gray-300" />
+        </li>
+        <li class="flex flex-col items-center justify-end w-full">
+          <a href="${prefix}contact" class="button w-full">Skontaktuj się z nami</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
 `;
+
+    const hamburger = this.querySelector("#hamburger");
+    const header = this.querySelector("header");
+    hamburger.addEventListener("change", () => {
+      header.classList.toggle("overflow-hidden", !hamburger.checked);
+      document.body.classList.toggle("overflow-hidden", hamburger.checked);
+    });
   }
 }
 
