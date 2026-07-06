@@ -105,44 +105,140 @@
     <x-header data-path="index"></x-header>
 
     <main>
-      <section
-        class="flex flex-col md:flex-row items-center px-4 md:px-16 py-10 md:py-20 gap-10 max-w-7xl mx-auto"
-      >
-        <div class="text-center md:text-left sm:w-1/2">
-          <h1 class="text-3xl md:text-6xl font-black my-8" data-aos="fade-up">
-            Zdrowy pracownik to wydajny pracownik
-          </h1>
+      <section class="w-full h-200 overflow-hidden bg-slate-950 select-none" id="hero-section">
+        <div id="hero-slider" class="splide w-full h-full" aria-label="Nasze Usługi">
+          <div class="splide__track h-full">
+            <ul class="splide__list h-full">
+              <li class="splide__slide h-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+                  alt="Fizjoterapia dorośli"
+                  class="absolute inset-0 w-full h-full object-cover"
+                >
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/40 to-slate-950/10 flex flex-col justify-end p-8 md:p-12 lg:p-16"
+                >
+                  <div class="max-w-md" data-aos="fade-up">
+                    <span
+                      class="inline-block px-4 py-1 bg-indigo-600 text-white text-xs font-bold uppercase tracking-widest mb-4"
+                    >
+                      Dla Pracowników
+                    </span>
+                    <h2
+                      class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight"
+                    >
+                      Fizjoterapia Dorośli
+                    </h2>
+                    <p class="text-gray-300 text-sm md:text-base mb-6 leading-relaxed">
+                      Pomagamy firmom zmniejszyć liczbę zwolnień lekarskich i zwiększyć
+                      produktywność pracowników dzięki stałej opiece fizjoterapeutycznej w miejscu
+                      pracy.
+                    </p>
+                    <a
+                      href="#contact"
+                      class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3 transition-colors duration-200 text-sm tracking-wide"
+                    >
+                      Skontaktuj się z nami
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4 fill-current"
+                        viewBox="0 -960 960 960"
+                      >
+                        <path
+                          d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
 
-          <p class="text-gray-500" data-aos="fade-up">
-            Pomagamy firmom zmniejszyć liczbę zwolnień lekarskich i zwiększyć produktywność
-            pracowników dzięki stałej opiece fizjoterapeutycznej w miejscu pracy.
-          </p>
+              <li class="splide__slide h-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop"
+                  alt="Fizjoterapia dzieci"
+                  class="absolute inset-0 w-full h-full object-cover"
+                >
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/40 to-slate-950/10 flex flex-col justify-end p-8 md:p-12 lg:p-16"
+                >
+                  <div class="max-w-md" data-aos="fade-up" data-aos-delay="150">
+                    <span
+                      class="inline-block px-4 py-1 bg-teal-600 text-white text-xs font-bold uppercase tracking-widest mb-4"
+                    >
+                      Profilaktyka i Rozwój
+                    </span>
+                    <h2
+                      class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight"
+                    >
+                      Fizjoterapia Dzieci
+                    </h2>
+                    <p class="text-gray-300 text-sm md:text-base mb-6 leading-relaxed">
+                      Kompleksowa ocena postawy, gimnastyka korekcyjna oraz bezpieczna rehabilitacja
+                      ruchowa najmłodszych prowadzona przez doświadczonych ekspertów.
+                    </p>
+                    <a
+                      href="#contact"
+                      class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-bold px-6 py-3 transition-colors duration-200 text-sm tracking-wide"
+                    >
+                      Zobacz szczegóły
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4 fill-current"
+                        viewBox="0 -960 960 960"
+                      >
+                        <path
+                          d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
 
-          <h4 class="font-semibold mt-8">Zaufaj specjalistom</h4>
-          <div
-            class="mb-8 mt-2 mx-auto md:mx-0 px-6 py-1 text-gray-600 border border-gray-200 rounded-lg w-fit bg-white"
-          >
-            30+ ★★★★★ opinii
-          </div>
-
-          <a href="#contact" class="button w-full">
-            Skontaktuj się z nami
-          </a>
-        </div>
-
-        <div>
-          <img
-            src="img/hero.webp"
-            alt="hero"
-            class="rounded-lg max-h-96"
-          >
-
-          <div class="text-gray-400 text-xs text-center pt-1">
-            Photo by <a
-              href="https://unsplash.com/@der_zeman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Marc Zeman</a> on <a
-              href="https://unsplash.com/photos/a-woman-getting-a-back-massage-from-a-man-uLWW09LLG04?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Unsplash</a>
+              <li class="splide__slide h-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1543269664-7eef42226a21?q=80&w=1200&auto=format&fit=crop"
+                  alt="Logopedia"
+                  class="absolute inset-0 w-full h-full object-cover"
+                >
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/40 to-slate-950/10 flex flex-col justify-end p-8 md:p-12 lg:p-16"
+                >
+                  <div class="max-w-md" data-aos="fade-up" data-aos-delay="300">
+                    <span
+                      class="inline-block px-4 py-1 bg-amber-600 text-white text-xs font-bold uppercase tracking-widest mb-4"
+                    >
+                      Pewność Siebie i Mowa
+                    </span>
+                    <h2
+                      class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight"
+                    >
+                      Logopedia
+                    </h2>
+                    <p class="text-gray-300 text-sm md:text-base mb-6 leading-relaxed">
+                      Skuteczna terapia wad wymowy, korekcja dykcji oraz usuwanie barier
+                      komunikacyjnych u dzieci oraz osób dorosłych.
+                    </p>
+                    <a
+                      href="#contact"
+                      class="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-bold px-6 py-3 transition-colors duration-200 text-sm tracking-wide"
+                    >
+                      Sprawdź ofertę
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4 fill-current"
+                        viewBox="0 -960 960 960"
+                      >
+                        <path
+                          d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -547,6 +643,7 @@
       </section>
 
       <div
+        id="reviews-slider"
         class="splide px-4 md:px-16 max-w-[60rem] mx-auto pb-10 mb-20"
         aria-labelledby="carousel-heading"
       >
@@ -701,32 +798,68 @@
         easing: "ease-in-out",
       });
 
-      let splide;
+      let reviewsSplide;
       let resizeTimeout;
-      function initSplide() {
+
+      function initReviewsSplide() {
         const isMobile = window.innerWidth <= 768;
 
-        if (splide) {
-          splide.destroy();
+        if (reviewsSplide) {
+          reviewsSplide.destroy();
         }
 
-        splide = new Splide(".splide", {
-          type: "loop",
-          autoplay: true,
-          drag: isMobile,
-          classes: {
-            page: "splide__pagination__page !bg-indigo-600 mt-10",
-          },
-        });
-
-        splide.mount();
+        const reviewsEl = document.getElementById("reviews-slider");
+        if (reviewsEl) {
+          reviewsSplide = new Splide("#reviews-slider", {
+            type: "loop",
+            autoplay: true,
+            drag: isMobile,
+            classes: {
+              page: "splide__pagination__page !bg-indigo-600 mt-10",
+            },
+          });
+          reviewsSplide.mount();
+        }
       }
-      initSplide();
+
+      function initHeroSlider() {
+        const heroEl = document.getElementById("hero-slider");
+        if (heroEl) {
+          new Splide("#hero-slider", {
+            type: "loop",
+            gap: 0,
+            arrows: false,
+            pagination: true,
+            perPage: 3,
+            drag: false,
+            autoplay: false,
+            breakpoints: {
+              1280: {
+                perPage: 2,
+                drag: true,
+                autoplay: true,
+                interval: 3500,
+              },
+              768: {
+                perPage: 1,
+                drag: true,
+                autoplay: true,
+                interval: 3500,
+              },
+            },
+          }).mount();
+        }
+      }
+
+      initReviewsSplide();
+      initHeroSlider();
+
       window.addEventListener("resize", () => {
         clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => initSplide(), 200);
+        resizeTimeout = setTimeout(() => initReviewsSplide(), 200);
       });
 
+      // contact form
       const form = document.getElementById("contact-form");
       const status = document.getElementById("form-status");
       form.addEventListener("submit", async function (e) {
