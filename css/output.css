@@ -79,6 +79,8 @@
     --color-primary-300: #bcccad;
     --color-primary-400: #9fb28f;
     --color-primary-500: #819474;
+    --color-primary-700: #5a6852;
+    --color-primary-800: #495445;
   }
 }
 @layer base {
@@ -1374,6 +1376,27 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-indigo-500);
+      }
+    }
+  }
+  .hover\:text-primary-500 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary-500);
+      }
+    }
+  }
+  .hover\:text-primary-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary-700);
+      }
+    }
+  }
+  .hover\:text-primary-800 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary-800);
       }
     }
   }

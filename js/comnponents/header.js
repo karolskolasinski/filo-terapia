@@ -24,10 +24,10 @@ class Header extends HTMLElement {
     </div>
 
     <nav class="hidden md:flex items-center gap-6">
-      <a href="${prefix}about" class="hover:text-indigo-500">O nas</a>
-      <a href="${prefix}services" class="hover:text-indigo-500">Jak to działa?</a>
-      <a href="${prefix}reviews" class="hover:text-indigo-500">Opinie</a>
-      <a href="${prefix}contact" class="hover:text-indigo-500">Kontakt</a>
+      <a href="${prefix}about" class="hover:text-primary-800">Oferta</a>
+      <a href="${prefix}services" class="hover:text-primary-800">Kadra</a>
+      <a href="${prefix}reviews" class="hover:text-primary-800">Cennik</a>
+      <a href="${prefix}contact" class="hover:text-primary-800">Blog</a>
     </nav>
 
     <nav class="md:hidden group">
