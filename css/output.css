@@ -58,6 +58,7 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
@@ -280,6 +281,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
@@ -330,6 +334,9 @@
   }
   .mt-\[100px\] {
     margin-top: 100px;
+  }
+  .mt-auto {
+    margin-top: auto;
   }
   .mb-1 {
     margin-bottom: var(--spacing);
@@ -441,6 +448,9 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -556,6 +566,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -644,6 +657,10 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-gray-100 {
     border-color: var(--color-gray-100);
   }
@@ -661,6 +678,12 @@
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
+  }
+  .bg-gray-50\/50 {
+    background-color: color-mix(in srgb, oklch(98.5% 0.002 247.839) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-gray-50) 50%, transparent);
+    }
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -739,11 +762,20 @@
   .fill-\[\#75d3cc\] {
     fill: #75d3cc;
   }
+  .fill-\[\#0866ff\] {
+    fill: #0866ff;
+  }
+  .fill-\[\#E1306C\] {
+    fill: #E1306C;
+  }
   .fill-amber-300 {
     fill: var(--color-amber-300);
   }
   .fill-current {
     fill: currentcolor;
+  }
+  .fill-gray-400 {
+    fill: var(--color-gray-400);
   }
   .fill-indigo-500 {
     fill: var(--color-indigo-500);
@@ -783,6 +815,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -886,6 +921,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -1034,6 +1073,11 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1043,6 +1087,14 @@
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
+  .duration-150 {
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
   }
   .duration-200 {
     --tw-duration: 200ms;
@@ -1059,6 +1111,10 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
   }
   .group-checked\:right-0 {
     &:is(:where(.group):checked *) {
@@ -1272,10 +1328,31 @@
       }
     }
   }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
+      }
+    }
+  }
   .hover\:bg-indigo-100 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-indigo-100);
+      }
+    }
+  }
+  .hover\:bg-primary-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-primary-200);
+      }
+    }
+  }
+  .hover\:bg-primary-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-primary-500);
       }
     }
   }
@@ -1312,6 +1389,58 @@
       @media (hover: hover) {
         text-decoration-line: underline;
       }
+    }
+  }
+  .hover\:opacity-90 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 90%;
+      }
+    }
+  }
+  .focus\:bg-primary-500 {
+    &:focus {
+      background-color: var(--color-primary-500);
+    }
+  }
+  .active\:scale-\[0\.98\] {
+    &:active {
+      scale: 0.98;
+    }
+  }
+  .active\:bg-gray-200 {
+    &:active {
+      background-color: var(--color-gray-200);
+    }
+  }
+  .active\:bg-primary-500 {
+    &:active {
+      background-color: var(--color-primary-500);
+    }
+  }
+  .active\:fill-gray-500 {
+    &:active {
+      fill: var(--color-gray-500);
+    }
+  }
+  .active\:fill-primary-500 {
+    &:active {
+      fill: var(--color-primary-500);
+    }
+  }
+  .active\:text-white {
+    &:active {
+      color: var(--color-white);
+    }
+  }
+  .active\:opacity-80 {
+    &:active {
+      opacity: 80%;
+    }
+  }
+  .active\:opacity-95 {
+    &:active {
+      opacity: 95%;
     }
   }
   .xs\:mt-25\.75 {
