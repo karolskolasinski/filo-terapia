@@ -32,7 +32,7 @@ class Header extends HTMLElement {
       <a href="${prefix}about" class="hover:text-primary-400">Oferta</a>
       <a href="${prefix}services" class="hover:text-primary-400">Kadra</a>
       <a href="${prefix}reviews" class="hover:text-primary-400">Cennik</a>
-      <a href="${prefix}contact" class="hover:text-primary-400">Blog</a>
+      <a href="blog.html" class="hover:text-primary-400">Blog</a>
     </nav>
 
     <nav class="md:hidden group">
