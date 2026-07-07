@@ -7,7 +7,7 @@ class Header extends HTMLElement {
     const prefix = path === "index" ? "#" : "/#";
 
     this.innerHTML = `
-<header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md shadow-md overflow-hidden">
+<header class="z-10 sticky top-0 bg-white shadow-md overflow-hidden">
   <div class="flex justify-between items-center p-4 md:px-16 max-w-7xl mx-auto">
     <div class="flex items-center gap-4">
       <a href="${prefix}" class="flex gap-2 items-center">
