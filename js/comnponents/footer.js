@@ -54,10 +54,10 @@ class Footer extends HTMLElement {
                   class="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity brightness-0 invert"
                 />
                 <a
-                  href="tel:+48694939755"
+                  href="tel:+48535353274"
                   class="hover:text-primary-400 transition-colors duration-200"
                 >
-                  +48 694 939 755
+                  +48 53 53 53 274
                 </a>
               </div>
 
