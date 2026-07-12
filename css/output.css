@@ -6,6 +6,7 @@
     --font-sans: Sora, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-900: oklch(39.6% 0.141 25.723);
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-300: oklch(87.9% 0.169 91.605);
@@ -97,6 +98,8 @@
     --color-secondary-500: #f95742;
     --color-secondary-600: #e33d28;
     --color-secondary-700: #be2e1b;
+    --color-secondary-800: #9d2719;
+    --color-secondary-900: #822318;
   }
 }
 @layer base {
@@ -715,8 +718,29 @@
   .bg-primary-700 {
     background-color: var(--color-primary-700);
   }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
+  }
   .bg-red-900 {
     background-color: var(--color-red-900);
+  }
+  .bg-secondary-400 {
+    background-color: var(--color-secondary-400);
+  }
+  .bg-secondary-500 {
+    background-color: var(--color-secondary-500);
+  }
+  .bg-secondary-600 {
+    background-color: var(--color-secondary-600);
+  }
+  .bg-secondary-700 {
+    background-color: var(--color-secondary-700);
+  }
+  .bg-secondary-800 {
+    background-color: var(--color-secondary-800);
+  }
+  .bg-secondary-900 {
+    background-color: var(--color-secondary-900);
   }
   .bg-slate-900 {
     background-color: var(--color-slate-900);

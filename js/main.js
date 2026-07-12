@@ -2,6 +2,7 @@ import "./comnponents/header.js";
 import "./comnponents/footer.js";
 import "./comnponents/benefits.js";
 import "./comnponents/review.js";
+import "./comnponents/infobar.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerCheckbox = document.getElementById("hamburger");
