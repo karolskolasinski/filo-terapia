@@ -19,8 +19,9 @@ class Footer extends HTMLElement {
             <div class="flex-1 flex flex-col gap-3">
               <x-logo
                 data-prefix="${prefix}"
-                class="text-[1.75rem] xs:text-[2rem] text-white font-black tracking-tight"
-              ></x-logo>
+                class="text-[2rem] xs:text-[3rem] font-black tracking-tight"
+              >
+              </x-logo>
               <p class="text-sm max-w-sm font-light">
                 Nowoczesna fizjoterapia i logopedia dla całej rodziny. Dbamy o Twój komfort i zdrowie
                 każdego dnia.
@@ -28,7 +29,7 @@ class Footer extends HTMLElement {
             </div>
 
             <div class="flex flex-col gap-4 flex-1">
-              <h2 class="text-xl font-black uppercase tracking-wider text-primary-300">
+              <h2 class="text-xl font-black uppercase tracking-wider text-secondary-400">
                 Kontakt
               </h2>
 
@@ -40,7 +41,7 @@ class Footer extends HTMLElement {
                 />
                 <a
                   href="mailto:biuro@filo-terapia.pl?subject=Kontakt z filo-terapia.pl"
-                  class="hover:text-secondary-400 transition-colors duration-200"
+                  class="hover:text-primary-400 transition-colors duration-200"
                 >
                   biuro@filo-terapia.pl
                 </a>
@@ -54,7 +55,7 @@ class Footer extends HTMLElement {
                 />
                 <a
                   href="tel:+48694939755"
-                  class="hover:text-secondary-400 transition-colors duration-200"
+                  class="hover:text-primary-400 transition-colors duration-200"
                 >
                   +48 694 939 755
                 </a>
@@ -70,15 +71,24 @@ class Footer extends HTMLElement {
                   href="${mapsUrl}"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:text-secondary-400 transition-colors duration-200"
+                  class="hover:text-primary-400 transition-colors duration-200"
                 >
                   ul. Świętokrzyska 64, Gdańsk
                 </a>
               </div>
+
+              <div class="flex gap-3 items-center group text-sm md:text-base">
+                <img
+                  src="img/schedule.svg"
+                  alt="Godziny otwarcia"
+                  class="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity brightness-0 invert"
+                />
+                Godziny otwarcia:<br /> Poniedziałek-Piątek 08:00-20:00
+              </div>
             </div>
 
             <div class="flex-1 flex flex-col gap-3">
-              <h2 class="text-xl font-black uppercase tracking-wider text-primary-300">
+              <h2 class="text-xl font-black uppercase tracking-wider text-secondary-400">
                 Obserwuj nas
               </h2>
 

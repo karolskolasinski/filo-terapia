@@ -1135,6 +1135,9 @@
   .text-\[2\.5rem\] {
     font-size: 2.5rem;
   }
+  .text-\[2rem\] {
+    font-size: 2rem;
+  }
   .text-\[3rem\] {
     font-size: 3rem;
   }
@@ -1277,6 +1280,9 @@
   }
   .text-primary-500 {
     color: var(--color-primary-500);
+  }
+  .text-secondary-300 {
+    color: var(--color-secondary-300);
   }
   .text-secondary-400 {
     color: var(--color-secondary-400);
@@ -1748,6 +1754,13 @@
       }
     }
   }
+  .hover\:text-primary-500 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary-500);
+      }
+    }
+  }
   .hover\:text-secondary-300 {
     &:hover {
       @media (hover: hover) {
@@ -1862,6 +1875,11 @@
   .xs\:gap-4 {
     @media (width >= 32rem) {
       gap: calc(var(--spacing) * 4);
+    }
+  }
+  .xs\:text-\[2\.5rem\] {
+    @media (width >= 32rem) {
+      font-size: 2.5rem;
     }
   }
   .xs\:text-\[2rem\] {
