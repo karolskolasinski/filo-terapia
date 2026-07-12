@@ -214,11 +214,11 @@
             btn.classList.remove("bg-slate-900", "text-white", "border-transparent", "hover:bg-slate-800");
             btn.classList.add("bg-white", "text-slate-700", "border-gray-200");
 
-            const cat = btn.getAttribute("data-filter");
-            if (cat === "adults") btn.classList.add("hover:bg-indigo-50");
-            if (cat === "kids") btn.classList.add("hover:bg-teal-50");
-            if (cat === "speech") btn.classList.add("hover:bg-amber-50");
-            if (cat === "all") btn.classList.add("hover:bg-slate-100");
+            const c = btn.getAttribute("data-filter");
+            if (c === "adults") btn.classList.add("hover:bg-indigo-50");
+            if (c === "kids") btn.classList.add("hover:bg-teal-50");
+            if (c === "speech") btn.classList.add("hover:bg-amber-50");
+            if (c === "all") btn.classList.add("hover:bg-slate-100");
           });
 
           const activeCat = button.getAttribute("data-filter");
