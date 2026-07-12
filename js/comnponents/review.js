@@ -31,4 +31,4 @@ ${content}
   }
 }
 
-customElements.define("hw-review", Review);
+customElements.define("x-review", Review);
