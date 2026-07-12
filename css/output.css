@@ -98,6 +98,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-display: "Comfortaa", sans-serif;
+    --color-primary-200: #c5d5e6;
     --color-primary-300: #9bb8d7;
     --color-primary-400: #6a95c3;
     --color-primary-500: #4675a9;
@@ -834,6 +835,9 @@
   .bg-secondary-900 {
     background-color: var(--color-secondary-900);
   }
+  .bg-slate-100 {
+    background-color: var(--color-slate-100);
+  }
   .bg-slate-900 {
     background-color: var(--color-slate-900);
   }
@@ -860,6 +864,13 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
     }
+  }
+  .bg-linear-to-r {
+    --tw-gradient-position: to right;
+    @supports (background-image: linear-gradient(in lab, red, red)) {
+      --tw-gradient-position: to right in oklab;
+    }
+    background-image: linear-gradient(var(--tw-gradient-stops));
   }
   .bg-linear-to-t {
     --tw-gradient-position: to top;
@@ -905,6 +916,13 @@
   }
   .to-slate-900 {
     --tw-gradient-to: var(--color-slate-900);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-slate-900\/10 {
+    --tw-gradient-to: color-mix(in srgb, oklch(20.8% 0.042 265.755) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-slate-900) 10%, transparent);
+    }
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-slate-900\/60 {
@@ -1280,6 +1298,9 @@
   }
   .text-indigo-600 {
     color: var(--color-indigo-600);
+  }
+  .text-primary-200 {
+    color: var(--color-primary-200);
   }
   .text-primary-300 {
     color: var(--color-primary-300);
