@@ -1,8 +1,7 @@
 import "./comnponents/header.js";
 import "./comnponents/footer.js";
-import "./comnponents/benefits.js";
 import "./comnponents/review.js";
-import "./comnponents/infobar.js";
+import "./comnponents/info-bar.js";
 import "./comnponents/blog-card.js";
 import "./comnponents/logo.js";
 

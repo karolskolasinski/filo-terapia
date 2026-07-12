@@ -1,6 +1,6 @@
 import { html } from "./utils.js";
 
-class Infobar extends HTMLElement {
+class InfoBar extends HTMLElement {
   constructor() {
     super();
 
@@ -55,4 +55,4 @@ class Infobar extends HTMLElement {
   }
 }
 
-customElements.define("x-infobar", Infobar);
+customElements.define("x-info-bar", InfoBar);
