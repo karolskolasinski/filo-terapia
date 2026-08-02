@@ -25,8 +25,8 @@ class Header extends HTMLElement {
 
           <nav class="hidden md:flex items-center gap-6">
             <a href="${prefix}about" class="hover:text-primary-400">O nas</a>
-            <a href="${prefix}services" class="hover:text-primary-400">Kadra</a>
-            <a href="${prefix}reviews" class="hover:text-primary-400">Cennik</a>
+            <a href="${prefix}team" class="hover:text-primary-400">Kadra</a>
+            <a href="${prefix}pricing" class="hover:text-primary-400">Cennik</a>
             <a href="blog.html" class="hover:text-primary-400">Blog</a>
             <a href="${prefix}contact" class="hover:text-primary-400">Kontakt</a>
           </nav>
@@ -56,7 +56,7 @@ class Header extends HTMLElement {
             >
               <li class="border-b border-gray-100">
                 <a
-                  href="#"
+                  href="${prefix}about"
                   class="block w-full py-5 px-6 transition-colors duration-150 active:bg-primary-500 active:text-white select-none"
                 >
                   O nas
@@ -65,7 +65,7 @@ class Header extends HTMLElement {
 
               <li class="border-b border-gray-100">
                 <a
-                  href="#"
+                  href="${prefix}team"
                   class="block w-full py-5 px-6 transition-colors duration-150 active:bg-primary-500 active:text-white select-none"
                 >
                   Kadra
@@ -74,7 +74,7 @@ class Header extends HTMLElement {
 
               <li class="border-b border-gray-100">
                 <a
-                  href="#"
+                  href="${prefix}pricing"
                   class="block w-full py-5 px-6 transition-colors duration-150 active:bg-primary-500 active:text-white select-none"
                 >
                   Cennik
@@ -83,7 +83,7 @@ class Header extends HTMLElement {
 
               <li class="border-b border-gray-100">
                 <a
-                  href="#"
+                  href="blog.html"
                   class="block w-full py-5 px-6 transition-colors duration-150 active:bg-primary-500 active:text-white select-none"
                 >
                   Blog
@@ -197,6 +197,7 @@ class Header extends HTMLElement {
     this.menuList = this.querySelector("#menu-list");
 
     this.updateMenuPosition = this.updateMenuPosition.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
 
     this.hamburger.addEventListener("change", () => {
       this.updateMenuPosition();
@@ -205,12 +206,25 @@ class Header extends HTMLElement {
       document.body.classList.toggle("overflow-hidden", this.hamburger.checked);
     });
 
+    const menuLinks = this.menuList.querySelectorAll("a");
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", this.closeMenu);
+    });
+
     window.addEventListener("scroll", this.updateMenuPosition);
     window.addEventListener("resize", this.updateMenuPosition);
   }
 
   connectedCallback() {
     this.updateMenuPosition();
+  }
+
+  closeMenu() {
+    if (this.hamburger.checked) {
+      this.hamburger.checked = false;
+      this.header.classList.add("overflow-hidden");
+      document.body.classList.remove("overflow-hidden");
+    }
   }
 
   updateMenuPosition() {
