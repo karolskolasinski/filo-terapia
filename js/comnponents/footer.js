@@ -126,9 +126,16 @@ class Footer extends HTMLElement {
             </div>
           </div>
 
-          <span class="pt-6 flex justify-center text-xs text-slate-200">
-            &copy; 2026 filo-terapia.pl. Wszelkie prawa zastrzeżone.
-          </span>
+          <div class="text-xs text-slate-200 py-6 text-center">
+            &copy; 2026 filo-terapia.pl. Wszelkie prawa zastrzeżone. | 
+
+            <a
+              href="regulamin.html"
+              class="hover:text-primary-400 transition-colors duration-200 underline underline-offset-4"
+            >
+              Regulamin
+            </a>
+          </div>
         </div>
       </footer>
     `;
