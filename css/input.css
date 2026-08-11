@@ -29,44 +29,44 @@
   --color-secondary-900: #752d1c;
   --color-secondary-950: #40140b;
 
-  /* Fizjoterapia dorosłych – oliwkowy (stonowany) */
-  --color-fizjo-50: #f6f7f5;
-  --color-fizjo-100: #e9ebe6;
-  --color-fizjo-200: #d4d9ce;
-  --color-fizjo-300: #b8c1b0;
-  --color-fizjo-400: #9da891;
-  --color-fizjo-500: #809471;
-  --color-fizjo-600: #657658;
-  --color-fizjo-700: #505c46;
-  --color-fizjo-800: #424c3b;
-  --color-fizjo-900: #384032;
-  --color-fizjo-950: #20251d;
+  /* Fizjoterapia dorosłych – oliwkowy, stonowany */
+  --color-fizjo-50: #f5f6f2;
+  --color-fizjo-100: #e8ebe3;
+  --color-fizjo-200: #d1d8ca;
+  --color-fizjo-300: #b3bfaa;
+  --color-fizjo-400: #94a48a;
+  --color-fizjo-500: #778a68;
+  --color-fizjo-600: #5f7052;
+  --color-fizjo-700: #4c5a42;
+  --color-fizjo-800: #404b38;
+  --color-fizjo-900: #363f30;
+  --color-fizjo-950: #1c2118;
 
-  /* Fizjoterapia dzieci – jaśniejszy zielony (stonowany) */
-  --color-fizjo-dzieci-50: #f4f7f4;
-  --color-fizjo-dzieci-100: #e5ece5;
-  --color-fizjo-dzieci-200: #ccdacc;
-  --color-fizjo-dzieci-300: #a8c0a8;
-  --color-fizjo-dzieci-400: #82a382;
-  --color-fizjo-dzieci-500: #668a66;
-  --color-fizjo-dzieci-600: #517051;
-  --color-fizjo-dzieci-700: #425a42;
-  --color-fizjo-dzieci-800: #374a37;
-  --color-fizjo-dzieci-900: #2f3e2f;
-  --color-fizjo-dzieci-950: #172117;
+  /* Fizjoterapia dzieci – jaśniejszy szałwiowy zielony */
+  --color-fizjo-kids-50: #f2f7f3;
+  --color-fizjo-kids-100: #e1ece4;
+  --color-fizjo-kids-200: #c5d9cb;
+  --color-fizjo-kids-300: #9fc4aa;
+  --color-fizjo-kids-400: #79ad88;
+  --color-fizjo-kids-500: #5c946e;
+  --color-fizjo-kids-600: #487a58;
+  --color-fizjo-kids-700: #3b6249;
+  --color-fizjo-kids-800: #32503c;
+  --color-fizjo-kids-900: #2a4232;
+  --color-fizjo-kids-950: #142319;
 
-  /* Logopedia – szary (stonowany) */
-  --color-logopedia-50: #f7f7f7;
-  --color-logopedia-100: #ededed;
-  --color-logopedia-200: #dfdfdf;
-  --color-logopedia-300: #c8c8c8;
-  --color-logopedia-400: #adadad;
-  --color-logopedia-500: #999999;
-  --color-logopedia-600: #888888;
-  --color-logopedia-700: #7a7a7a;
-  --color-logopedia-800: #676767;
-  --color-logopedia-900: #545454;
-  --color-logopedia-950: #363636;
+  /* Logopedia – ciepły kamienny szary */
+  --color-logo-50: #f7f6f5;
+  --color-logo-100: #eceae8;
+  --color-logo-200: #d9d5d2;
+  --color-logo-300: #bdb8b3;
+  --color-logo-400: #9e9892;
+  --color-logo-500: #847d77;
+  --color-logo-600: #6f6862;
+  --color-logo-700: #5c5651;
+  --color-logo-800: #4d4844;
+  --color-logo-900: #423e3b;
+  --color-logo-950: #292624;
 }
 
 .button {

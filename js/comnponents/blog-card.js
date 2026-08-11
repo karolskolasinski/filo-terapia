@@ -9,15 +9,15 @@ const CATEGORIES = {
   },
   kids: {
     badge: "Dla dzieci",
-    accentBadge: "bg-fizjo-dzieci-600",
-    accentTitle: "hover:text-fizjo-dzieci-600",
-    accentLink: "text-fizjo-dzieci-600",
+    accentBadge: "bg-fizjo-kids-600",
+    accentTitle: "hover:text-fizjo-kids-600",
+    accentLink: "text-fizjo-kids-600",
   },
   speech: {
     badge: "Mowa i rozwój",
-    accentBadge: "bg-logopedia-600",
-    accentTitle: "hover:text-logopedia-600",
-    accentLink: "text-logopedia-600",
+    accentBadge: "bg-logo-600",
+    accentTitle: "hover:text-logo-600",
+    accentLink: "text-logo-600",
   },
 };
 
