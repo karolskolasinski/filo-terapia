@@ -67,6 +67,22 @@
   --color-logo-800: #4d4844;
   --color-logo-900: #423e3b;
   --color-logo-950: #292624;
+
+  /* Hero slider – jednorazowe kolory kafelków (poza paletami usług) */
+  --color-hero-fizjo-bg: #d5ddd0;
+  --color-hero-fizjo-badge: #6a7365;
+  --color-hero-fizjo-heading: #3a4236;
+  --color-hero-fizjo-body: #566052;
+
+  --color-hero-kids-bg: #dce8dc;
+  --color-hero-kids-badge: #6d8570;
+  --color-hero-kids-heading: #354538;
+  --color-hero-kids-body: #4f6352;
+
+  --color-hero-logo-bg: #dde3d6;
+  --color-hero-logo-badge: #787f72;
+  --color-hero-logo-heading: #3c4238;
+  --color-hero-logo-body: #565c52;
 }
 
 .button {
@@ -86,4 +102,19 @@ label {
 
 #about, #team, #pricing, #contact {
   @apply scroll-mt-26;
+}
+
+#hero-slider .splide__pagination {
+  bottom: 1.25rem;
+}
+
+#hero-slider .splide__pagination__page {
+  background: #b8c4b0;
+  opacity: 1;
+  transform: scale(0.85);
+}
+
+#hero-slider .splide__pagination__page.is-active {
+  background: #5a6354;
+  transform: scale(1);
 }
