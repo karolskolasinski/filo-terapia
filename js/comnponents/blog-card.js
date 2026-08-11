@@ -3,21 +3,21 @@ import { html } from "./utils.js";
 const CATEGORIES = {
   adults: {
     badge: "Dla dorosłych",
-    accentBadge: "bg-indigo-600",
-    accentTitle: "hover:text-indigo-600",
-    accentLink: "text-indigo-600",
+    accentBadge: "bg-fizjo-600",
+    accentTitle: "hover:text-fizjo-600",
+    accentLink: "text-fizjo-600",
   },
   kids: {
     badge: "Dla dzieci",
-    accentBadge: "bg-teal-600",
-    accentTitle: "hover:text-teal-600",
-    accentLink: "text-teal-600",
+    accentBadge: "bg-fizjo-dzieci-600",
+    accentTitle: "hover:text-fizjo-dzieci-600",
+    accentLink: "text-fizjo-dzieci-600",
   },
   speech: {
     badge: "Mowa i rozwój",
-    accentBadge: "bg-amber-600",
-    accentTitle: "hover:text-amber-600",
-    accentLink: "text-amber-600",
+    accentBadge: "bg-logopedia-600",
+    accentTitle: "hover:text-logopedia-600",
+    accentLink: "text-logopedia-600",
   },
 };
 

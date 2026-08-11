@@ -103,19 +103,19 @@
           </button>
           <button
             data-filter="adults"
-            class="filter-btn px-4 py-2 bg-white text-slate-700 hover:bg-indigo-50 border border-gray-200 rounded-full transition-all"
+            class="filter-btn px-4 py-2 bg-white text-slate-700 hover:bg-fizjo-50 border border-gray-200 rounded-full transition-all"
           >
             Fizjoterapia Dorosłych
           </button>
           <button
             data-filter="kids"
-            class="filter-btn px-4 py-2 bg-white text-slate-700 hover:bg-teal-50 border border-gray-200 rounded-full transition-all"
+            class="filter-btn px-4 py-2 bg-white text-slate-700 hover:bg-fizjo-dzieci-50 border border-gray-200 rounded-full transition-all"
           >
             Fizjoterapia Dzieci
           </button>
           <button
             data-filter="speech"
-            class="filter-btn px-4 py-2 bg-white text-slate-700 hover:bg-amber-50 border border-gray-200 rounded-full transition-all"
+            class="filter-btn px-4 py-2 bg-white text-slate-700 hover:bg-logopedia-50 border border-gray-200 rounded-full transition-all"
           >
             Logopedia
           </button>
@@ -134,7 +134,7 @@
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
               <span
-                class="absolute top-4 left-4 px-3 py-1 bg-indigo-600 text-white text-xs font-bold uppercase tracking-widest rounded-md shadow-sm"
+                class="absolute top-4 left-4 px-3 py-1 bg-fizjo-600 text-white text-xs font-bold uppercase tracking-widest rounded-md shadow-sm"
               >
                 Dla dorosłych
               </span>
@@ -146,7 +146,7 @@
                 <span>Czytania: 5 min</span>
               </div>
               <h3
-                class="font-bold text-gray-900 text-xl mb-3 leading-snug hover:text-indigo-600 transition-colors"
+                class="font-bold text-gray-900 text-xl mb-3 leading-snug hover:text-fizjo-600 transition-colors"
               >
                 <a href="#">Bóle kręgosłupa w pracy biurowej – jak im zapobiegać?</a>
               </h3>
@@ -158,7 +158,7 @@
                 <span class="text-xs text-gray-400">Autor: mgr O. D.</span>
                 <a
                   href="#"
-                  class="text-indigo-600 text-sm font-bold inline-flex items-center gap-1 hover:underline"
+                  class="text-fizjo-600 text-sm font-bold inline-flex items-center gap-1 hover:underline"
                 >
                   Czytaj więcej
                   <svg
@@ -186,7 +186,7 @@
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
               <span
-                class="absolute top-4 left-4 px-3 py-1 bg-teal-600 text-white text-xs font-bold uppercase tracking-widest rounded-md shadow-sm"
+                class="absolute top-4 left-4 px-3 py-1 bg-fizjo-dzieci-600 text-white text-xs font-bold uppercase tracking-widest rounded-md shadow-sm"
               >
                 Dla kids
               </span>
@@ -198,7 +198,7 @@
                 <span>Czytania: 7 min</span>
               </div>
               <h3
-                class="font-bold text-gray-900 text-xl mb-3 leading-snug hover:text-teal-600 transition-colors"
+                class="font-bold text-gray-900 text-xl mb-3 leading-snug hover:text-fizjo-dzieci-600 transition-colors"
               >
                 <a href="#">Jak rozpoznać wady postawy u dziecka? Poradnik dla rodzica</a>
               </h3>
@@ -211,7 +211,7 @@
                 <span class="text-xs text-gray-400">Autor: mgr P. W.</span>
                 <a
                   href="#"
-                  class="text-teal-600 text-sm font-bold inline-flex items-center gap-1 hover:underline"
+                  class="text-fizjo-dzieci-600 text-sm font-bold inline-flex items-center gap-1 hover:underline"
                 >
                   Czytaj więcej
                   <svg
@@ -239,7 +239,7 @@
                 class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
               <span
-                class="absolute top-4 left-4 px-3 py-1 bg-amber-600 text-white text-xs font-bold uppercase tracking-widest rounded-md shadow-sm"
+                class="absolute top-4 left-4 px-3 py-1 bg-logopedia-600 text-white text-xs font-bold uppercase tracking-widest rounded-md shadow-sm"
               >
                 Mowa i rozwój
               </span>
@@ -251,7 +251,7 @@
                 <span>Czytania: 4 min</span>
               </div>
               <h3
-                class="font-bold text-gray-900 text-xl mb-3 leading-snug hover:text-amber-600 transition-colors"
+                class="font-bold text-gray-900 text-xl mb-3 leading-snug hover:text-logopedia-600 transition-colors"
               >
                 <a href="#">Kiedy udać się z dzieckiem do logopedy? Pierwsze symptomy</a>
               </h3>
@@ -264,7 +264,7 @@
                 <span class="text-xs text-gray-400">Autor: mgr B. K.</span>
                 <a
                   href="#"
-                  class="text-amber-600 text-sm font-bold inline-flex items-center gap-1 hover:underline"
+                  class="text-logopedia-600 text-sm font-bold inline-flex items-center gap-1 hover:underline"
                 >
                   Czytaj więcej
                   <svg
@@ -312,16 +312,16 @@
               btn.classList.add("bg-white", "text-slate-700", "border-gray-200");
 
               const c = btn.getAttribute("data-filter");
-              if (c === "adults") btn.classList.add("hover:bg-indigo-50");
-              if (c === "kids") btn.classList.add("hover:bg-teal-50");
-              if (c === "speech") btn.classList.add("hover:bg-amber-50");
+              if (c === "adults") btn.classList.add("hover:bg-fizjo-50");
+              if (c === "kids") btn.classList.add("hover:bg-fizjo-dzieci-50");
+              if (c === "speech") btn.classList.add("hover:bg-logopedia-50");
               if (c === "all") btn.classList.add("hover:bg-slate-100");
             });
 
             const activeCat = button.getAttribute("data-filter");
-            if (activeCat === "adults") button.classList.remove("hover:bg-indigo-50");
-            if (activeCat === "kids") button.classList.remove("hover:bg-teal-50");
-            if (activeCat === "speech") button.classList.remove("hover:bg-amber-50");
+            if (activeCat === "adults") button.classList.remove("hover:bg-fizjo-50");
+            if (activeCat === "kids") button.classList.remove("hover:bg-fizjo-dzieci-50");
+            if (activeCat === "speech") button.classList.remove("hover:bg-logopedia-50");
             if (activeCat === "all") button.classList.remove("hover:bg-slate-100");
 
             button.classList.remove("bg-white", "text-slate-700", "border-gray-200");
