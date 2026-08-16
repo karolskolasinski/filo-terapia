@@ -18,9 +18,9 @@ class Header extends HTMLElement {
             >
             </x-logo>
 
-            <button class="button hidden! lg:flex! gap-2">
+            <a href="rezerwacja.html" class="button hidden! lg:flex! gap-2">
               Umów wizytę
-            </button>
+            </a>
           </div>
 
           <nav class="hidden md:flex items-center gap-6">
@@ -91,7 +91,7 @@ class Header extends HTMLElement {
               </li>
 
               <li class="text-center pt-10">
-                <button class="button flex gap-2">
+                <a href="rezerwacja.html" class="button flex gap-2">
                   Umów wizytę
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -102,12 +102,12 @@ class Header extends HTMLElement {
                       d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v400-400Z"
                     />
                   </svg>
-                </button>
+                </a>
               </li>
 
               <li class="mt-auto w-full p-6 flex flex-col gap-5 bg-gray-50/50 border-t border-gray-100">
                 <div class="flex flex-col gap-3 text-sm font-medium text-gray-600">
-                  <div class="inline-flex gap-3 items-center">
+                  <a href="tel:+48535353274" class="inline-flex gap-3 items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 -960 960 960"
@@ -117,8 +117,8 @@ class Header extends HTMLElement {
                         d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
                       />
                     </svg>
-                    666 993 383
-                  </div>
+                    +48 53 53 53 274
+                  </a>
 
                   <div class="inline-flex gap-3 items-center">
                     <svg

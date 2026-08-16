@@ -71,7 +71,7 @@
     <x-header data-path="index"></x-header>
 
     <main>
-      <section class="w-full h-[500px] overflow-hidden" id="hero-section">
+      <section class="w-full h-125 overflow-hidden" id="hero-section">
         <div id="hero-slider" class="splide w-full h-full" aria-label="Nasze Usługi">
           <div class="splide__track h-full">
             <ul class="splide__list h-full">
@@ -261,7 +261,7 @@
             </ul>
 
             <a
-              href="#contact"
+              href="rezerwacja.html"
               class="button h-12! px-8 text-base! tracking-wide shadow-md"
             >
               Umów wizytę
@@ -331,7 +331,7 @@
                   <li>• Fizjoterapia stomatologiczna (TMJ)</li>
                 </ul>
                 <a
-                  href="#contact"
+                  href="rezerwacja.html"
                   class="text-secondary-500 text-sm font-semibold mt-4 inline-flex items-center gap-1 w-fit hover:underline"
                 >
                   Umów wizytę
@@ -370,7 +370,7 @@
                   <li>• Zaburzenia napięcia mięśniowego</li>
                 </ul>
                 <a
-                  href="#contact"
+                  href="rezerwacja.html"
                   class="text-secondary-500 text-sm font-semibold mt-4 inline-flex items-center gap-1 w-fit hover:underline"
                 >
                   Umów wizytę
@@ -408,7 +408,7 @@
                   <li>• Terapia wad wymowy u młodzieży i dorosłych</li>
                 </ul>
                 <a
-                  href="#contact"
+                  href="rezerwacja.html"
                   class="text-secondary-500 text-sm font-semibold mt-4 inline-flex items-center gap-1 w-fit hover:underline"
                 >
                   Umów wizytę
@@ -538,6 +538,24 @@
                         <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
                       </svg>
                       <div>
+                        <span class="text-gray-900 block font-semibold">Hirudoterapia</span>
+                        <span class="text-xs text-gray-400 font-normal"
+                        >Cana zawiera jedną pijawkę, każda następna <strong>20 zł</strong> (45
+                          minut)</span>
+                      </div>
+                    </div>
+                    <span class="text-base font-black text-gray-900 whitespace-nowrap">200 zł</span>
+                  </li>
+                  <li class="flex items-center justify-between gap-4 pb-3">
+                    <div class="flex items-start gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 -960 960 960"
+                        class="fill-fizjo-600 w-5 h-5 min-w-5 mt-0.5"
+                      >
+                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                      </svg>
+                      <div>
                         <span class="text-gray-900 block font-semibold"
                         >Kinesiology taping (bez terapii)*</span>
                         <span class="text-xs text-gray-400 font-normal"
@@ -554,7 +572,7 @@
 
               <div class="pt-4 mt-auto">
                 <a
-                  href="#contact"
+                  href="rezerwacja.html"
                   class="button w-full justify-center"
                 >
                   Umów wizytę
@@ -754,7 +772,7 @@
 
               <div class="pt-4 mt-auto">
                 <a
-                  href="#contact"
+                  href="rezerwacja.html"
                   class="button w-full justify-center"
                 >
                   Umów wizytę
@@ -885,7 +903,7 @@
 
               <div class="pt-4 mt-auto">
                 <a
-                  href="#contact"
+                  href="rezerwacja.html"
                   class="button w-full justify-center"
                 >
                   Umów wizytę
@@ -1170,7 +1188,7 @@
         }
       });
 
-      var map = L.map("map", { scrollWheelZoom: false }).setView([54.3233, 18.6119], 15);
+      var map = L.map("map", { scrollWheelZoom: false }).setView([54.3197341, 18.5930305], 15);
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -1182,7 +1200,7 @@
         iconAnchor: [24, 48],
         popupAnchor: [0, -48],
       });
-      L.marker([54.3233, 18.6119], { icon })
+      L.marker([54.3197341, 18.5930305], { icon })
         .addTo(map)
         .bindPopup(
           "<div class='font-sans p-1 w-40'><p class='flex gap-1 m-0!'><b class='text-primary-500'>FiLO</b>- ośrodek terapii</p><span class='text-gray-600 text-xs'>ul. Świętokrzyska 64<br>80-180 Gdańsk</span></div>",
