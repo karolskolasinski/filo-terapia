@@ -147,8 +147,8 @@
 
       const WORKERS = {
         olga: "10015",
-        barbara: "10016",
-        paulina: "10017",
+        paulina: "10016",
+        barbara: "10017",
       };
 
       const iframe = document.getElementById("asysto_iframe");
@@ -171,15 +171,17 @@
         });
       }
 
-      window.addEventListener("message", (e) => {
-        if (e.data && e.data.hasOwnProperty("iframe_height") && iframe) {
+      window.addEventListener('message', (e) => {
+        if (e.data && e.data.hasOwnProperty('iframe_height') && iframe) {
           iframe.style.height = `${e.data.iframe_height}px`;
         }
       });
 
-      if (iframe) {
-        iframe.src = targetUrl;
-      }
+      window.addEventListener('load', () => {
+        if (iframe) {
+          iframe.src = targetUrl;
+        }
+      });
     </script>
   </body>
 </html>
